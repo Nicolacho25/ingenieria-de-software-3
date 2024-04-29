@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login y registro</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    
+    <div class="marco-superior"></div>
+
+    <main>
+
+        <div class=" text__card-primary">
+            <p>MANUAL</p>
+        </div>
+
+        <div class="container">
+
+                <div class="card">
+                    <img src="images/1.jpeg">
+                    <p>ESTOS BOTON TE PERMITIRA NAVEGAR POR LA APLICACION DANDOLE SIGUIENTE O RETROCEDER CADA PAGUINA DONDE DESESES ESTAR</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/2.jpeg">
+                    <p>ESTE BOTON TE PERMITIRA CONFIGURAR TU CONVERSOR DE MONEDA DE LA FORMA MAS COMODA COMO DESEES</p>
+                </div>
+
+                <div class="card">
+                    <img src="images/3.jpeg">
+                    <p>ESTE BOTON TE PERMITIRA VISUALIZAR LAS ESTADISTICAS Y HISTORIAL DE TUS MONEDAS FAVORITAS </p>
+                </div>
+
+                <div class="card">
+                    <img src="images/4.jpeg">
+                    <p>ESTE  BOTON TE PERMITIRA DIRIGIRTE AL INICIO DE LA APLICACION EN DONDE PODRAS REALIZAR LOS INTERCAMBIOS QUE DESEES</p>
+                </div>
+
+                <div class="flecha">
+                    <img src="images/5.jpeg" id="nextBtn">
+                </div>
+
+            </div>
+    </main>
+
+    <!-- modificar -->
+    <script>
+        let scrollContainer = document.querySelector("container");
+        let nextBtn = document.querySelector("nextBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) =>{
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY
+        })
+
+        nextBtn.addEventListener("click", () =>{
+            scrollContainer.scrollLeft += 900;
+        })
+    </script>
+</body>
+</html>
