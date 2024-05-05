@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #d4ebf6; 
+}
+
+main{
+    display: flex;
+}
+
+.marco-superior {
+    background-color: #7b22b2; /* Color de fondo del marco */
+    height: 50px; /* Altura del marco */
+    width: 100%; /* Ancho del marco (ocupará todo el ancho de la ventana del navegador) */
+    position: fixed; /* Fijar el marco en la parte superior de la ventana */
+    top: 0; /* Colocar el marco en la parte superior de la ventana */
+    left: 0; /* Colocar el marco en la parte izquierda de la ventana */
+    z-index: 1000; /* Asegurar que el marco esté en la parte superior de otros elementos */
+}
+
+.titulo{
+    margin-top: 100px;
+    margin-left: 50px;
+    color: #df1e1e;
+    font-size: 45px;
+}
+
+.parte_principal{
+    margin-top: 100px;
+    margin-left: 100px;
+    
+}
+
+.parte_principal .title{
+    font-size: 40px;
+    color: #7b22b2;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 250px;
+}
+
+.marco-blanco {
+    background-color: #fff; /* Color blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 200px 260px; /* Espacio alrededor del marco blanco */
+    margin-top: -30px; /* Margen superior */
+}
+
+.marco-blanco p{
+    color: #07c15b;
+    font-size: 20px;
+    margin-top: -170px;
+}
+.marco-blanco h1{
+    color: #07c15b;
+    font-size: 20px;
+    margin-top: -170px;
+}
+
+.marco-blanco h2{
+    color: #000000;
+    font-size: 20px;
+    margin-top: 80px;
+}
+.marco-blanco h3{
+    color: #000000;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.marco-blanco img{
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.images{
+    margin-top: 70px;
+    margin-left: 50px;
+
+}
+
+.images img{
+    width: 150px; 
+}
