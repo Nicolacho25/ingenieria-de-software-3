@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #d4ebf6; 
+}
+
+.marco-superior {
+    background-color: #7b22b2; /* Color de fondo del marco */
+    height: 50px; /* Altura del marco */
+    width: 100%; /* Ancho del marco (ocupará todo el ancho de la ventana del navegador) */
+    position: fixed; /* Fijar el marco en la parte superior de la ventana */
+    top: 0; /* Colocar el marco en la parte superior de la ventana */
+    left: 0; /* Colocar el marco en la parte izquierda de la ventana */
+    z-index: 1000; /* Asegurar que el marco esté en la parte superior de otros elementos */
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;  
+}
+.image__cover{
+    width: 100%;
+    display: flex;
+    padding: 0px 150px;
+
+}
+
+.image__cover img{
+    width: 550px; 
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+/*FORMULARIOS*/
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -300px;
+    left: 600px; 
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #07c15b;
+}
+.contenedor__login-register form h3{
+    font-size: 18px;
+    color: #8f8e8e; 
+}
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    background: #ececec;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+.INGRESAR{
+    padding: 10px 98px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: none;
+    font-size: 20px;
+    background: #fdd673;
+    color: #404040;
+    cursor: pointer;
+    outline: none;
+}
+
+.mi-boton{
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: #7b22b2; /* Color del texto */
+    padding: 0; /* Sin relleno */
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center; /* Alineación del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre él */
+}
+
+.CREAR{
+    padding: 10px 115px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: none;
+    font-size: 20px;
+    background: #fdd673;
+    color: #404040;
+    cursor: pointer;
+    outline: none;
+}
+.mi-boton1{
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: #7b22b2; /* Color del texto */
+    padding: 0; /* Sin relleno */
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center; /* Alineación del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre él */
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+/*responsive desing*/
+@media screen and (max-width:850px){
+    main{
+        margin-top: 50px;
+    }
+    .image__cover img{
+        width: 100x;
+    }
+
+
+    /*formulario*/
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
